@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
+  
+  resources :trips
+  
+  resources :boats do
+    resources :trips, only: [:index, :show, :new]
+  end
+
+  resources :clients do 
+    resources :trips, only: [:index, :show, :new]
+  end
+
+  
   devise_for :clients
-  devise_for :users, path: 'users'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  devise_for :users, controllers: {omniauth}
+
 end
