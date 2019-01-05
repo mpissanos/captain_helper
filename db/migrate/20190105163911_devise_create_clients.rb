@@ -6,7 +6,7 @@ class DeviseCreateClients < ActiveRecord::Migration[5.2]
 
       t.string :name
       t.string :phone_number
-      t.integer :user_id
+      t.references :user, index: true
 
       ## Database authenticatable
       t.string :email,              null: false, default: ""
