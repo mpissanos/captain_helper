@@ -16,6 +16,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise'
 gem 'simple_calendar', '~> 2.0'
 gem 'carrierwave'
+gem 'valid_email2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
