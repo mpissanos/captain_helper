@@ -5,4 +5,5 @@ class Boat < ApplicationRecord
 
 
   #Add validations below
+  validates :name, presence: true
 end

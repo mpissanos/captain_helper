@@ -17,7 +17,9 @@ gem 'devise'
 gem 'simple_calendar', '~> 2.0'
 gem 'carrierwave'
 gem 'valid_email2'
+gem 'omniauth'
 gem 'omniauth-facebook'
+gem 'omniauth-google'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 

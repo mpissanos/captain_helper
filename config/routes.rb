@@ -12,6 +12,6 @@ Rails.application.routes.draw do
 
   
   devise_for :clients
-  devise_for :users, controllers: {omniauth}
+  devise_for :users
 
 end
