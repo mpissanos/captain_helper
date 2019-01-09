@@ -9,7 +9,6 @@ class CreateTrips < ActiveRecord::Migration[5.2]
       t.integer :number_of_personnel
       t.references :boat, index: true, foreign_key: true
       t.references :user, index: true, foreign_key: true
-      t.references :client, index: true, foreign_key: true
 
       t.timestamps
     end
