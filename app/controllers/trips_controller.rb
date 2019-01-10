@@ -1,7 +1,7 @@
 class TripsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_client, only: [:index, :new, :edit]
-  before_action :set_boat, only: [:index, :new, :edit]
+  # before_action :set_client, only: [:index, :new, :edit]
+  # before_action :set_boat, only: [:index, :new, :edit]
   
     def index
       @trips = Trip.all
@@ -16,9 +16,9 @@ class TripsController < ApplicationController
       @trip = current_user.trips.build
     end
   
-    def create
-      @trip = Trip.new(params[:])
-    end
+    # def create
+    #   @trip = Trip.new(params[:])
+    # end
   
     def update
       @trip = Trip.find(params[:id])
@@ -34,12 +34,12 @@ class TripsController < ApplicationController
 
     private 
 
-    def set_client
-      @client = current_user.clients.find_by(id: params:[:client_id])
-    end
+    # def set_client
+    #   @client = current_user.clients.find_by(id: params:[:client_id])
+    # end
 
-    def set_boat
-      @boat = current_user.boats.find_by(id: params[:boat_id])
-    end
+    # def set_boat
+    #   @boat = current_user.boats.find_by(id: params[:boat_id])
+    # end
 
 end
